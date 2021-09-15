@@ -24,3 +24,5 @@ WHEN a user clicks on a city in the search history
 THEN a user is again presented with current and future conditions for that city
 
 ## Mock-Up
+
+<img width= "1136" alt="screen-shot" src="https://user-images.githubusercontent.com/58919468/133478890-c8083677-2d1f-49a0-8cc3-6c1361e02695.png">

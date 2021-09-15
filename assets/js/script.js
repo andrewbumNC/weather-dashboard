@@ -21,7 +21,7 @@ function handleSearchFormSubmit(event) {
         return;
     }
 
-    var queryUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + citySearchVal + '&appid=' + apiKey;
+    var queryUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + citySearchVal + '&appid=' + apiKey;
 
 
     fetchApi(queryUrl);
@@ -109,7 +109,7 @@ function printTodayWeatherResults(data) {
     //Today Weather Icon - Can't get icon to render
     var todayWeatherIcon = document.createElement('span');
     var todayWeatherIconVal = data.weather[0].icon
-    var weatherIconUrl = '<img src=http://openweathermap.org/img/wn/' + todayWeatherIconVal + '@2x.png ></img>'
+    var weatherIconUrl = '<img src=https://openweathermap.org/img/wn/' + todayWeatherIconVal + '@2x.png ></img>'
     todayWeatherIcon.innerHTML = (weatherIconUrl)
 
     //Current Temperature. Need to round
@@ -177,7 +177,7 @@ function printExtendedWeatherResults(data2) {
         
         var extendedWeatherIconEl = document.createElement('span');
         var extendedWeatherIconVal = data2.daily[i].weather[0].icon
-        var extendedWeatherIconUrl = '<img src=http://openweathermap.org/img/wn/' + extendedWeatherIconVal + '@2x.png > </img>'
+        var extendedWeatherIconUrl = '<img src=https://openweathermap.org/img/wn/' + extendedWeatherIconVal + '@2x.png > </img>'
         extendedWeatherIconEl.innerHTML = (extendedWeatherIconUrl)
 
         var extendedWeatherHeader = document.createElement('h4');
@@ -263,7 +263,7 @@ function handlePastCity (event) {
    var pastCity = event.target.getAttribute('past-city');
    console.log(pastCity)
 
-    var queryUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + pastCity + '&appid=' + apiKey;
+    var queryUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + pastCity + '&appid=' + apiKey;
     fetchApi(queryUrl)
 }
 
