@@ -4,13 +4,14 @@
 
 * User Story
 * Functionality
-* Mock-Up
 * Github and live URL link
+* Mock-Up
 
-# User Story
+
+## User Story
 As a user, you will be able to see the weather outlook for multiple cities so that you can plan trips and activities accordingly
 
-# Functionality
+## Functionality
 GIVEN a weather dashboard with form inputs
 WHEN a user searches for a city
 THEN a user is presented with current and future conditions for that city and that city is added to the search history
@@ -22,6 +23,11 @@ WHEN a user views future weather conditions for that city
 THEN a user is presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
 WHEN a user clicks on a city in the search history
 THEN a user is again presented with current and future conditions for that city
+
+## Github and live URL link
+
+GitHub: https://github.com/andrewbumNC/weather-dashboard
+LiveURL: https://andrewbumnc.github.io/weather-dashboard/
 
 ## Mock-Up
 
